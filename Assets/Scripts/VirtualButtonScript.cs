@@ -6,9 +6,9 @@ using Vuforia;
 public class VirtualButtonScript : MonoBehaviour
 {
     public GameObject vbtn;
-    public GameObject GiantOrb;
+    public GameObject[] Orbs;
     private Vector3 pos; 
-    public float GiantOrbHeight;
+    public float OrbHeight;
    
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,10 @@ public class VirtualButtonScript : MonoBehaviour
 
     public void OnPressedOrb(VirtualButtonBehaviour vb)
     {
-        Debug.Log(vbtn.transform.position);
-        pos = vbtn.transform.position + new Vector3(0,GiantOrbHeight,0);
-        Instantiate(GiantOrb,pos ,vbtn.transform.rotation);
+        //Debug.Log(vbtn.transform.position);
+        int index = Random.Range(0, Orbs.Length);
+        pos = vbtn.transform.position + new Vector3(0,OrbHeight,0);
+        Instantiate(Orbs[index],pos ,vbtn.transform.rotation);
     }
 
 
