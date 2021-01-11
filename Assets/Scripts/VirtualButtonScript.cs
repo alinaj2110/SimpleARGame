@@ -7,6 +7,7 @@ public class VirtualButtonScript : MonoBehaviour
 {
     public GameObject vbtn;
     public GameObject[] Orbs;
+    public float Radius;
     private Vector3 pos; 
     public float OrbHeight;
    
@@ -18,9 +19,11 @@ public class VirtualButtonScript : MonoBehaviour
 
     public void OnPressedOrb(VirtualButtonBehaviour vb)
     {
-        //Debug.Log(vbtn.transform.position);
+        
         int index = Random.Range(0, Orbs.Length);
-        pos = vbtn.transform.position + new Vector3(0,OrbHeight,0);
+        pos = Random.insideUnitSphere * Radius;
+        pos.y = OrbHeight;
+        Debug.Log(pos);
         Instantiate(Orbs[index],pos ,vbtn.transform.rotation);
     }
 
