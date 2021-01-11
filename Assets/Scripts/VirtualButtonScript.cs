@@ -7,10 +7,9 @@ public class VirtualButtonScript : MonoBehaviour
 {
     public GameObject vbtn;
     public GameObject GiantOrb;
-    //public GameObject SmallOrb;
-    //public float zone_range;
-    private Vector3 pos;  //, pos2;
+    private Vector3 pos; 
     public float GiantOrbHeight;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +20,7 @@ public class VirtualButtonScript : MonoBehaviour
     {
         Debug.Log(vbtn.transform.position);
         pos = vbtn.transform.position + new Vector3(0,GiantOrbHeight,0);
-        //pos2 = new Vector3(Random.Range(-zone_range, zone_range), GiantOrbHeight, Random.Range(-zone_range, zone_range));
         Instantiate(GiantOrb,pos ,vbtn.transform.rotation);
-        //Instantiate(SmallOrb, pos2, vbtn.transform.rotation);
     }
 
 

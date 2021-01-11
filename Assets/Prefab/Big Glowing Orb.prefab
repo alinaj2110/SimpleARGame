@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 498458661124826802}
   - component: {fileID: 498458661124826807}
   - component: {fileID: 498458661124826806}
-  - component: {fileID: 7500666250589503111}
   - component: {fileID: 5689272356957227190}
   - component: {fileID: 8437212484494985838}
+  - component: {fileID: 9070776927974891513}
   m_Layer: 3
   m_Name: Big Glowing Orb
   m_TagString: Untagged
@@ -4872,18 +4872,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &7500666250589503111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 498458661124826764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 762f840f92be3894ca648c439125bb85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &5689272356957227190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4912,3 +4900,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 762f840f92be3894ca648c439125bb85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9070776927974891513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498458661124826764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a6522f7a897e5646ba759980c110ca4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timekeep: 1
+  speed: 0.01

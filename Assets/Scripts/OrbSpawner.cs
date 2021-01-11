@@ -27,8 +27,8 @@ public class OrbSpawner : MonoBehaviour
     //spawn function
     public void OrbSpawn()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-zone_range, zone_range),0, Random.Range(-zone_range, zone_range)) - Imagetarget.transform.position;
-        Instantiate(orb,spawnPos, transform.rotation);          //transform.position+spawnPos
+        Vector3 spawnPos = new Vector3(Random.Range(-zone_range, zone_range), 0, Random.Range(-zone_range, zone_range)); //- Imagetarget.transform.position;
+        Instantiate(orb,spawnPos, transform.rotation);          
     }
 
 }

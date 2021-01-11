@@ -28,7 +28,6 @@ public class MobileMovementControl : MonoBehaviour
         {
             Touch touchinput = Input.GetTouch(0);
             direction = touchinput.position - screenCentre;
-            //direction = direction.Normalize;
             Direction3D = new Vector3(direction.x, 0, direction.y);
             Direction3D = Direction3D.normalized;
             Player.transform.rotation = Quaternion.LookRotation(Direction3D);
