@@ -1,8 +1,9 @@
 # Simple AR Game
 
-* This is a simple Augmented Reality Game built for Android using The Unity and Vuforia Engines.
+* This is a simple Augmented Reality Game built for Android using the Unity and Vuforia Engines.
 * The game consists of an Image Target on which a Player Model and several Glowing Orbs are formed.
-* The Player moves around the Image with the help of 4 Virtual Buttons.
+* The Player moves around the Image by touching the phone screen in the required direction.
+* There's a Virtual button in the middle of the image which, upon being pressed, randomly spawns multiple orbs.
 
 ## Resources Used:
 #### 1) Unity 2020.2.1f1
